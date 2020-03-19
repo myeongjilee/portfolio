@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+
+/* common */
+.txt_center{text-align:center;}
+
+/* intro */
+.intro{
+  background-color:#fbff47;
+}

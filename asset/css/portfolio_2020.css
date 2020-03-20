@@ -47,7 +47,7 @@ footer{
   display:table;
   width:100%;
   height:100vh;
-  background-color:#ffee2c;
+  background-color:#fdff47;
 }
 .intro h2{
   display:table-cell;
@@ -86,7 +86,7 @@ section h3{
   height:100%;
   padding:40px 56px;
   color:#000;
-  background-color:#ffee2c;
+  background-color:#fbff47;
   box-sizing:border-box;
   -webkit-box-sizing:border-box;
   -moz-box-sizing:border-box;

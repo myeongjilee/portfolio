@@ -223,4 +223,9 @@ body{
 	font-weight:400;
 	overflow-x:hidden;
 	-webkit-text-size-adjust: none;
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  user-select:none;
 }

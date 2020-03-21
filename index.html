@@ -86,5 +86,15 @@
     </section>
     <section class=""></section>
     <footer>Copyright &copy; codeli</footer>
+    <script>
+      $('.portfolio ul li a').on({
+        'touchstart' : function () {
+          $(this).addClass('active');
+        },
+        'touchend' : function () {
+          $(this).removeClass('active');
+        }
+      });
+    </script>
   </body>
 </html>

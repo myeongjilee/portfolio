@@ -56,7 +56,7 @@ footer{
   vertical-align:middle;
 }
 
-section h3{
+section h2{
   margin-bottom:10.9375vw;
   font-family:'Iropke Batang', serif;
   font-size:13.75vw;
@@ -107,7 +107,7 @@ section h3{
   left:8.75vw;
   bottom:6.25vw;
 }
-.portfolio ul li h4{
+.portfolio ul li h3{
   display:inline-block;
   font-weight:500;
   font-size:5.3125vw;
@@ -147,7 +147,7 @@ section h3{
   /* intro */
   .intro h2{font-size:200px;}
 
-  section h3{
+  section h2{
     margin-left:54px;
     margin-bottom:70px;
     font-size:88px;
@@ -176,7 +176,7 @@ section h3{
     left:56px;
     bottom:40px;
   }
-  .portfolio ul li h4{font-size:34px;}
+  .portfolio ul li h3{font-size:34px;}
   .portfolio ul li .year{
     margin-left:2px;
     font-size:13px;

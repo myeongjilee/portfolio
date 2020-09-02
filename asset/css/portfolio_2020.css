@@ -42,26 +42,37 @@ footer{
   z-index:100;
 }
 
-/* intro */
-.intro{
-  display:table;
-  width:100%;
-  height:100vh;
-  background-color:#ffee2c;
-}
-.intro h2{
-  display:table-cell;
-  font-family:'Iropke Batang', serif;
-  font-size:31.25vw;
-  vertical-align:middle;
-}
-
 section h2{
   margin-bottom:10.9375vw;
   font-family:'Iropke Batang', serif;
   font-size:13.75vw;
 }
 
+/* info */
+.info{padding:15.625vw 7.8125vw;}
+.info .profile{
+  display:table;
+}
+.info .profile>div{
+  display:table-cell;
+  vertical-align:middle;
+}
+.info .profile_img{width:25%;}
+.info .profile_txt{
+  width:75%;
+  padding-left:3.125vw;
+  line-height:1.4;
+}
+.info h3{
+  font-weight:600;
+  font-size:5.3125vw;
+}
+.info h4{
+  font-weight:300;
+  font-size:3.125vw;
+}
+
+/* portfolio */
 .portfolio{padding:15.625vw 7.8125vw;}
 .portfolio ul li{
   position:relative;
@@ -83,7 +94,7 @@ section h2{
   left:0;
   width:100%;
   height:100%;
-  padding:6.25vw 8.75vw;
+  padding:6.25vw 5.75vw;
   color:#fff;
   background-color:rgba(0,0,0,0.5);
   /* background-color:#ffee2c; */
@@ -104,7 +115,7 @@ section h2{
 }
 .portfolio ul li .txt_wrap{
   position:absolute;
-  left:8.75vw;
+  left:5.75vw;
   bottom:6.25vw;
 }
 .portfolio ul li h3{
@@ -144,15 +155,24 @@ section h2{
     font-size:14px;
   }
 
-  /* intro */
-  .intro h2{font-size:200px;}
-
   section h2{
     margin-left:54px;
     margin-bottom:70px;
     font-size:88px;
   }
 
+  /* info */
+  .info{padding:100px 0;}
+  .info .profile{margin-left:54px;}
+  .info .profile_img{width:100px;}
+  .info .profile_txt{
+    width:auto;
+    padding-left:20px;
+  }
+  .info h3{font-size:34px;}
+  .info h4{font-size:20px;}
+
+  /* portfolio */
   .portfolio{padding:100px 0;}
   .portfolio ul li{
     float:left;

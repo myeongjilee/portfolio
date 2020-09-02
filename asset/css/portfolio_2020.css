@@ -77,12 +77,20 @@ section h3{
   width:100%;
   height:100%;
   padding:6.25vw 8.75vw;
-  color:#000;
-  background-color:#ffee2c;
+  color:#fff;
+  /*background-color:#ffee2c;*/
+  background-position:center center;
+  background-size:cover;
+  background-repeat:no-repeat;
   box-sizing:border-box;
   -webkit-box-sizing:border-box;
   -moz-box-sizing:border-box;
 }
+.portfolio ul li:first-child a{background-image:url("../images/portfolio_bn_ks.jpg");}
+.portfolio ul li:nth-child(2) a{background-image:url("../images/portfolio_bn_1920_jisan_micro.jpg");}
+.portfolio ul li:nth-child(3) a{background-image:url("../images/portfolio_bn_1920_jisanresort.jpg");}
+.portfolio ul li:nth-child(4) a{background-image:url("../images/portfolio_bn_seoul365.jpg");}
+/*
 .portfolio ul li a:before{
   display:block;
   position:absolute;
@@ -106,6 +114,7 @@ section h3{
 .portfolio ul li:nth-child(2) a:before{background-image:url("../images/portfolio_bn_1920_jisan_micro.jpg");}
 .portfolio ul li:nth-child(3) a:before{background-image:url("../images/portfolio_bn_1920_jisanresort.jpg");}
 .portfolio ul li:nth-child(4) a:before{background-image:url("../images/portfolio_bn_seoul365.jpg");}
+*/
 .portfolio ul li .label{
   font-weight:300;
   font-size:2.1875vw;
@@ -115,6 +124,17 @@ section h3{
   position:absolute;
   left:8.75vw;
   bottom:6.25vw;
+}
+.portfolio ul li .label,
+.portfolio ul li .txt_wrap{
+  transition:opacity .8s, transform 1s;
+  opacity:0;
+}
+.portfolio ul li a:active .label,
+.portfolio ul li a.active .label,
+.portfolio ul li a:active .txt_wrap,
+.portfolio ul li a.active .txt_wrap{
+  opacity:1;
 }
 .portfolio ul li h4{
   display:inline-block;

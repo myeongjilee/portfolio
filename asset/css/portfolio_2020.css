@@ -224,6 +224,7 @@ section h2{
   .etc{padding:100px 0;}
   .etc p{
     margin-left:54px;
+    padding-left:10px;
     font-size:18px;
   }
   .etc p + p{margin-top:10px;}

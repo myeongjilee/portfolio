@@ -85,7 +85,7 @@ section h2{
   left:50%;
   width:50%;
   height:50%;
-  background-color:rgba(255,255,255,0.05);
+  background-color:rgba(255,255,255,0.1);
   -webkit-box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.2);
   box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.2);
   transform:translate(-50%, -50%);
@@ -121,6 +121,10 @@ section h2{
 .portfolio ul li:nth-child(2){background-image:url("../images/portfolio_bn_1920_jisan_micro.jpg");}
 .portfolio ul li:nth-child(3){background-image:url("../images/portfolio_bn_1920_jisanresort.jpg");}
 .portfolio ul li:nth-child(4){background-image:url("../images/portfolio_bn_seoul365.jpg");}
+.portfolio ul li:nth-child(5){background-image:url("../images/portfolio_bn_wisdom.jpg");}
+.portfolio ul li:nth-child(6){background-image:url("../images/portfolio_bn_slow_rabbit.jpg");}
+.portfolio ul li:nth-child(7){background-image:url("../images/portfolio_bn_luscent.jpg");}
+.portfolio ul li:nth-child(8){background-image:url("../images/portfolio_bn_daesang.jpg");}
 .portfolio ul li a{
   display:block;
   position:absolute;
@@ -167,6 +171,32 @@ section h2{
   letter-spacing:-0.05em;
   vertical-align:top;
 }
+.portfolio dl{
+  margin-top:5%;
+  line-height:1.4;
+}
+.portfolio dl dt{
+  font-weight:600;
+  font-size:3.4375vw;
+  word-break:keep-all;
+}
+.portfolio dl dd{
+  position:relative;
+  margin-top:1.5625vw;
+  padding-left:1.5625vw;
+  font-size:2.8125vw;
+}
+.portfolio dl dd:before{
+  display:block;
+  position:absolute;
+  top:0;
+  left:0;
+  content:'•';
+}
+.portfolio dl a{
+  color:#000;
+  transition:.8s;
+}
 
 /* etc */
 .etc{padding:15.625vw 7.8125vw;}
@@ -182,7 +212,7 @@ section h2{
   position:absolute;
   top:0;
   left:0;
-  content'•'
+  content:'•';
 }
 .etc p + p{margin-top:1.5625vw;}
 
@@ -249,13 +279,27 @@ section h2{
     margin-left:2px;
     font-size:13px;
   }
+  .portfolio>div{margin-left:54px;}
+  .portfolio dl{
+    float:left;
+    width:23%;
+    margin-top:0;
+    margin-right:2%;
+  }
+  .portfolio dl dt{font-size:20px;}
+  .portfolio dl dd{
+    margin-top:10px;
+    padding-left:10px;
+    font-size:16px;
+  }
+  .portfolio dl a:hover{color:rgba(0,0,0,0.6);}
 
   /* etc */
   .etc{padding:100px 0;}
   .etc p{
     margin-left:54px;
     padding-left:10px;
-    font-size:18px;
+    font-size:16px;
   }
   .etc p + p{margin-top:10px;}
 }

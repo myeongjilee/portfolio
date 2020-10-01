@@ -41,7 +41,8 @@ header h1 a{
 footer{
   position:fixed;
   right:3.125vw;
-  bottom:20px;
+  bottom:3.125vw;
+  width:21.875vw;
   color:rgba(0,0,0,0.5);
   font-size:2.1875vw;
   z-index:100;
@@ -235,6 +236,7 @@ section h2{
 }
 .kolonsport h2{letter-spacing:-0.035em;}
 .kolonsport ul li{margin-bottom:5%;}
+.kolonsport .img_box img{width:100%;}
 .kolonsport .txt_box{
   position:relative;
   margin-top:5%;
@@ -291,6 +293,7 @@ section h2{
   footer{
     right:20px;
     bottom:20px;
+    width:auto;
     font-size:14px;
   }
 
@@ -376,15 +379,11 @@ section h2{
   .kolonsport ul{padding:0 54px;}
   .kolonsport ul li{
     float:left;
-    width:21.25%;
+    width:30%;
     margin-right:5%;
   }
-  .kolonsport ul li:nth-child(4n){margin-right:0;}
-  .kolonsport ul li .txt_box{height:300px;}
-  /*.kolonsport ul li>div{float:left;}
-  .kolonsport ul li:nth-child(even) .img_box{float:right;}
-  .kolonsport ul li .img_box{width:20%;}
-  .kolonsport ul li .txt_box{width:;}*/
+  .kolonsport ul li:nth-child(3n){margin-right:0;}
+  .kolonsport ul li .txt_box{height:290px;}
   .kolonsport p,
   .kolonsport a{
     font-size:16px;
@@ -407,4 +406,9 @@ section h2{
     color:#fff;
     background-color:#000;
   }
+}
+@media screen and (min-width: 1920px){
+  .kolonsport ul li{width:21.25%;}
+  .kolonsport ul li:nth-child(3n){margin-right:5%;}
+  .kolonsport ul li:nth-child(4n){margin-right:0;}
 }

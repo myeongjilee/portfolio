@@ -215,8 +215,25 @@ section h2{
 }
 .etc p + p{margin-top:1.5625vw;}
 
+.btn_back{
+  display:block;
+  position:absolute;
+  top:3.75vw;
+  right:7.8125vw;
+  width:7.8125vw;
+  height:7.8125vw;
+  font-size:3.59375vw;
+  border:1px solid #000;
+  line-height:7.8125vw;
+  z-index:105;
+}
+
 /* kolonsport */
-.kolonsport{padding:15.625vw 7.8125vw;}
+.kolonsport{
+  position:relative;
+  padding:15.625vw 7.8125vw;
+}
+.kolonsport h2{letter-spacing:-0.035em;}
 .kolonsport ul li{margin-bottom:5%;}
 .kolonsport .txt_box{
   position:relative;
@@ -344,8 +361,18 @@ section h2{
   }
   .etc p + p{margin-top:10px;}
 
+  .btn_back{
+    top:24px;
+    right:54px;
+    width:50px;
+    height:50px;
+    font-size:23px;
+    line-height:50px;
+  }
+
   /* kolonsport */
   .kolonsport{padding:100px 0;}
+  .kolonsport h2{letter-spacing:0;}
   .kolonsport ul{padding:0 54px;}
   .kolonsport ul li{
     float:left;

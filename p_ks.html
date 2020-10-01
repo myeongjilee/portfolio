@@ -16,6 +16,7 @@
       <h1><a href="/portfolio/">codeli</a></h1>
     </header>
     <section class="kolonsport">
+      <button class="btn_back" onclick="goBack()">&larr;</button>
       <h2>KOLON SPORT</h2>
       <ul class="clearfix">
         <li>
@@ -39,7 +40,7 @@
             <p class="label">기획전</p>
             <h3>나의 꿈을 포기하지 않습니다 #HERO EXPEDITION</h3>
             <p class="txt">작업기간 : 1일(2020.02)</p>
-            <p class="txt">기여도 : PC 기준 100%</p>
+            <p class="txt">기여도 : PC 100%</p>
             <p class="txt">작업내용 : 텍스트 애니메이션 구현.</p>
             <a href="https://www.kolonsport.com/Special/5367" target="_blank" class="link">바로가기 &rarr;</a>
           </div>
@@ -65,7 +66,7 @@
             <p class="label">이벤트</p>
             <h3>코오롱스포츠 '솟솟618' 매장 오픈</h3>
             <p class="txt">작업기간 : 1일(2019.10)</p>
-            <p class="txt">기여도 : PC 기준 100%</p>
+            <p class="txt">기여도 : PC 100%</p>
             <p class="txt">작업내용 : 상단 애니메이션, 하단 팝업 구현.</p>
             <a href="https://www.kolonsport.com/Event/230" target="_blank" class="link">바로가기 &rarr;</a>
           </div>
@@ -91,7 +92,7 @@
             <p class="label">COLLECTION</p>
             <h3>Gate to Nature</h3>
             <p class="txt">작업기간 : 2일(2019.02)</p>
-            <p class="txt">기여도 : 모바일 기준 100%</p>
+            <p class="txt">기여도 : MOBILE 100%</p>
             <p class="txt">작업내용 : 텍스트 애니메이션, bxSlider와 Swiper를 활용한 슬라이드 구현.</p>
             <a href="https://www.kolonsport.com/About/Collection/62642" target="_blank" class="link">바로가기 &rarr;</a>
           </div>
@@ -104,7 +105,7 @@
             <p class="label">COLLECTION</p>
             <h3>45th Anniversary Antarctica</h3>
             <p class="txt">작업기간 : 1일(2018.11)</p>
-            <p class="txt">기여도 : 모바일 기준 100%</p>
+            <p class="txt">기여도 : MOBILE 100%</p>
             <p class="txt">작업내용 : 탭 기능, 텍스트 애니메이션, slick을 활용한 슬라이드, 팝업 구현.</p>
             <a href="https://www.kolonsport.com/Content/62000" target="_blank" class="link">바로가기 &rarr;</a>
           </div>
@@ -130,9 +131,9 @@
             <p class="label">CAMPAIGN</p>
             <h3>4th Noah Project SEA HORSE SEA LOVE</h3>
             <p class="txt">작업기간 : 3~4주(2018.03)</p>
-            <p class="txt">기여도 : PC 기준 100%</p>
+            <p class="txt">기여도 : PC 100%</p>
             <p class="txt">작업내용 : 코오롱스포츠의 환경보호 캠페인 노아 프로젝트 중 해마. fullPage.js를 사용해 작업했으며, 페이지 로딩 애니메이션과 하단 메뉴바의 물이 출렁거리는 효과가 포인트.</p>
-            <a href="./ks/noah/2018/index.html" target="_blank" class="link">바로가기 &rarr;</a>
+            <a href="http://kolonsport.mrromance.co.kr/noah/" target="_blank" class="link">바로가기 &rarr;</a>
           </div>
         </li>
         <li>
@@ -180,6 +181,11 @@
     </section>
     <footer>Copyright &copy; codeli</footer>
     <script>
+      /* back button */
+      function goBack() {
+        window.history.back();
+      }
+
       /* touch event */
       $('.kolonsport a').on({
         'touchstart' : function () {

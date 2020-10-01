@@ -234,7 +234,6 @@ section h2{
   position:relative;
   padding:15.625vw 7.8125vw;
 }
-.kolonsport h2{letter-spacing:-0.075em;}
 .kolonsport ul li{margin-bottom:5%;}
 .kolonsport .img_box img{width:100%;}
 .kolonsport .txt_box{
@@ -375,7 +374,6 @@ section h2{
 
   /* kolonsport */
   .kolonsport{padding:100px 0;}
-  .kolonsport h2{letter-spacing:0;}
   .kolonsport ul{padding:0 54px;}
   .kolonsport ul li{
     float:left;

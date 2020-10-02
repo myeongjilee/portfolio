@@ -235,6 +235,7 @@ section h2{
   padding:15.625vw 7.8125vw;
 }
 .kolonsport ul li{margin-bottom:5%;}
+.kolonsport ul li:last-child{margin-bottom:0;}
 .kolonsport .img_box img{width:100%;}
 .kolonsport .txt_box{
   position:relative;
@@ -409,4 +410,9 @@ section h2{
   .kolonsport ul li{width:21.25%;}
   .kolonsport ul li:nth-child(3n){margin-right:5%;}
   .kolonsport ul li:nth-child(4n){margin-right:0;}
+  .kolonsport ul li:nth-last-child(2),
+  .kolonsport ul li:nth-last-child(3),
+  .kolonsport ul li:nth-last-child(4){
+    margin-bottom:0;
+  }
 }

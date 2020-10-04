@@ -222,11 +222,9 @@ section h2{
 }
 .etc p + p{margin-top:1.5625vw;}
 
-.sub{
+.sub section{
   position:relative;
   padding:15.625vw 7.8125vw;
-  box-sizing:border-box;
-  -webkit-box-sizing:border-box;
 }
 .btn_back{
   display:block;
@@ -344,7 +342,7 @@ section h2{
   }
   .etc p + p{margin-top:8px;}
 
-  .sub{padding:80px 0;}
+  .sub section{padding:80px 0;}
   .btn_back{
     top:19px;
     right:43px;
@@ -476,7 +474,7 @@ section h2{
   }
   .etc p + p{margin-top:10px;}
 
-  .sub{padding:100px 0;}
+  .sub .section{padding:100px 0;}
   .btn_back{
     top:24px;
     right:54px;

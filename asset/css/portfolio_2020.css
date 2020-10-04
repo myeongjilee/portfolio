@@ -364,8 +364,7 @@ section h2{
     font-size:15px;
     line-height:40px;
   }
-  .sub h2 + .txt_box{padding:;}
-  .sub .txt_box{padding:0 43px;}
+  .sub h2 + .txt_box{padding:0 43px;}
   .sub p{font-size:15px;}
 
   /* kolonsport */
@@ -496,7 +495,7 @@ section h2{
     color:#fff;
     background-color:#000;
   }
-  .sub .txt_box{padding:0 54px;}
+  .sub h2 + .txt_box{padding:0 54px;}
   .sub p{font-size:16px;}
 
   /* kolonsport */

@@ -257,17 +257,18 @@ section h2{
   background-color:#000;
 }
 .sub .txt_box{position:relative;}
+.sub h2 .label{font-size:3.75vw;}
 .sub h2 + .txt_box{margin-bottom:5%;}
 .sub p{
   font-size:2.8125vw;
   line-height:1.4;
   word-break:keep-all;
 }
+.sub .img_box img{width:100%;}
 
 /* kolonsport */
 .kolonsport ul li{margin-bottom:5%;}
 .kolonsport ul li:last-child{margin-bottom:0;}
-.kolonsport .img_box img{width:100%;}
 .kolonsport .txt_box{margin-top:5%;}
 .kolonsport .label{
   font-weight:300;
@@ -363,11 +364,13 @@ section h2{
     font-size:15px;
     line-height:40px;
   }
+  .sub h2 .label{font-size:23px;}
   .sub h2 + .txt_box{
     margin:0 43px 5%;
     padding-bottom:60px;
   }
   .sub p{font-size:15px;}
+  .sub .txt_box + .img_box{padding:0 43px;}
 
   /* kolonsport */
   .kolonsport ul{padding:0 43px;}
@@ -497,11 +500,13 @@ section h2{
     color:#fff;
     background-color:#000;
   }
+  .sub h2 .label{font-size:24px;}
   .sub h2 + .txt_box{
     margin:0 54px 5%;
     padding-bottom:70px;
   }
   .sub p{font-size:16px;}
+  .sub .txt_box + .img_box{padding:0 54px;}
 
   /* kolonsport */
   .kolonsport ul{padding:0 54px;}

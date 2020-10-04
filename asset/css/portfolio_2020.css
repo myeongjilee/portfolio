@@ -225,6 +225,8 @@ section h2{
 .sub{
   position:relative;
   padding:15.625vw 7.8125vw;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
 }
 .btn_back{
   display:block;
@@ -256,6 +258,7 @@ section h2{
   color:#fff;
   background-color:#000;
 }
+.sub .txt_box{position:relative;}
 .sub p{
   font-size:2.8125vw;
   line-height:1.4;
@@ -266,10 +269,7 @@ section h2{
 .kolonsport ul li{margin-bottom:5%;}
 .kolonsport ul li:last-child{margin-bottom:0;}
 .kolonsport .img_box img{width:100%;}
-.kolonsport .txt_box{
-  position:relative;
-  margin-top:5%;
-}
+.kolonsport .txt_box{margin-top:5%;}
 .kolonsport .label{
   font-weight:300;
   text-transform:uppercase;
@@ -364,6 +364,8 @@ section h2{
     font-size:15px;
     line-height:40px;
   }
+  .sub h2 + .txt_box{padding:;}
+  .sub .txt_box{padding:0 43px;}
   .sub p{font-size:15px;}
 
   /* kolonsport */
@@ -494,6 +496,7 @@ section h2{
     color:#fff;
     background-color:#000;
   }
+  .sub .txt_box{padding:0 54px;}
   .sub p{font-size:16px;}
 
   /* kolonsport */

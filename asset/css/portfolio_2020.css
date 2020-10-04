@@ -226,7 +226,6 @@ section h2{
   position:relative;
   padding:15.625vw 7.8125vw;
 }
-
 .btn_back{
   display:block;
   position:absolute;
@@ -239,12 +238,14 @@ section h2{
   line-height:7.8125vw;
   z-index:105;
 }
-
 .btn_link{
   display:block;
+  float:right;
   width:18.75vw;
   height:7.8125vw;
+  margin-top:1.5625vw;
   color:#000;
+  font-size:2.8125vw;
   border:1px solid #000;
   line-height:7.8125vw;
   text-align:center;
@@ -255,6 +256,11 @@ section h2{
   color:#fff;
   background-color:#000;
 }
+.sub p{
+  font-size:2.8125vw;
+  line-height:1.4;
+  word-break:keep-all;
+}
 
 /* kolonsport */
 .kolonsport ul li{margin-bottom:5%;}
@@ -263,12 +269,6 @@ section h2{
 .kolonsport .txt_box{
   position:relative;
   margin-top:5%;
-}
-.kolonsport p,
-.kolonsport a{
-  font-size:2.8125vw;
-  line-height:1.4;
-  word-break:keep-all;
 }
 .kolonsport .label{
   font-weight:300;
@@ -280,10 +280,6 @@ section h2{
   font-size:3.4375vw;
   line-height:1.4em;
   word-break:keep-all;
-}
-.kolonsport .btn_link{
-  float:right;
-  margin-top:1.5625vw;
 }
 
 @media screen and (min-width: 768px){
@@ -349,7 +345,6 @@ section h2{
   .etc p + p{margin-top:8px;}
 
   .sub{padding:80px 0;}
-
   .btn_back{
     top:19px;
     right:43px;
@@ -358,12 +353,18 @@ section h2{
     font-size:22px;
     line-height:40px;
   }
-
   .btn_link{
+    float:none;
+    position:absolute;
+    right:0;
+    bottom:0;
     width:96px;
     height:40px;
+    margin-top:0;
+    font-size:15px;
     line-height:40px;
   }
+  .sub p{font-size:15px;}
 
   /* kolonsport */
   .kolonsport ul{padding:0 43px;}
@@ -373,20 +374,9 @@ section h2{
     margin-right:5%;
   }
   .kolonsport ul li .txt_box{height:260px;}
-  .kolonsport p,
-  .kolonsport a{
-    font-size:15px;
-  }
   .kolonsport h3{
     margin-bottom:8px;
     font-size:19px;
-  }
-  .kolonsport .btn_link{
-    float:none;
-    position:absolute;
-    right:0;
-    bottom:0;
-    margin-top:0;
   }
 }
 
@@ -486,7 +476,6 @@ section h2{
   .etc p + p{margin-top:10px;}
 
   .sub{padding:100px 0;}
-
   .btn_back{
     top:24px;
     right:54px;
@@ -495,24 +484,21 @@ section h2{
     font-size:23px;
     line-height:50px;
   }
-
   .btn_link{
     width:120px;
     height:50px;
+    font-size:16px;
     line-height:50px;
   }
   .btn_link:hover{
     color:#fff;
     background-color:#000;
   }
+  .sub p{font-size:16px;}
 
   /* kolonsport */
   .kolonsport ul{padding:0 54px;}
   .kolonsport ul li .txt_box{height:290px;}
-  .kolonsport p,
-  .kolonsport a{
-    font-size:16px;
-  }
   .kolonsport h3{
     margin-bottom:10px;
     font-size:20px;

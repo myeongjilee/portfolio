@@ -386,10 +386,24 @@ section h2{
   .kolonsport ul li:nth-child(2n){margin-right:0;}
 }
 @media screen and (min-width: 1024px){
+  /* portfolio */
+  .portfolio ul li{
+    float:left;
+    width:46%;
+    margin-bottom:5%;
+    padding-bottom:28.25%;
+
+  }
+  .portfolio ul li:nth-child(2n),
+  .portfolio ul li:nth-child(2n + 1){
+    margin-left:4%;
+  }
+  .portfolio ul li:nth-child(4n + 1){margin-left:0;}
+
   /* kolonsport */
   .kolonsport ul li{width:30%;}
   .kolonsport ul li:nth-child(3n){margin-right:0;}
-  .kolonsport ul li .txt_box{height:290px;}
+  .kolonsport ul li .txt_box{height:300px;}
 }
 
 @media screen and (min-width: 1280px){
@@ -426,18 +440,6 @@ section h2{
 
   /* portfolio */
   .portfolio{padding:100px 0;}
-  .portfolio ul li{
-    float:left;
-    width:46%;
-    margin-bottom:5%;
-    padding-bottom:28.25%;
-
-  }
-  .portfolio ul li:nth-child(2n),
-  .portfolio ul li:nth-child(2n + 1){
-    margin-left:4%;
-  }
-  .portfolio ul li:nth-child(4n + 1){margin-left:0;}
   .portfolio ul li a{
     padding:40px 56px;
     opacity:0;

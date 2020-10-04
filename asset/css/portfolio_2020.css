@@ -222,6 +222,11 @@ section h2{
 }
 .etc p + p{margin-top:1.5625vw;}
 
+.sub{
+  position:relative;
+  padding:15.625vw 7.8125vw;
+}
+
 .btn_back{
   display:block;
   position:absolute;
@@ -236,10 +241,6 @@ section h2{
 }
 
 /* kolonsport */
-.kolonsport{
-  position:relative;
-  padding:15.625vw 7.8125vw;
-}
 .kolonsport ul li{margin-bottom:5%;}
 .kolonsport ul li:last-child{margin-bottom:0;}
 .kolonsport .img_box img{width:100%;}
@@ -344,6 +345,8 @@ section h2{
   }
   .etc p + p{margin-top:8px;}
 
+  .sub{padding:80px 0;}
+
   .btn_back{
     top:19px;
     right:43px;
@@ -354,7 +357,6 @@ section h2{
   }
 
   /* kolonsport */
-  .kolonsport{padding:80px 0;}
   .kolonsport ul{padding:0 43px;}
   .kolonsport ul li{
     float:left;
@@ -477,6 +479,8 @@ section h2{
   }
   .etc p + p{margin-top:10px;}
 
+  .sub{padding:100px 0;}
+
   .btn_back{
     top:24px;
     right:54px;
@@ -487,7 +491,6 @@ section h2{
   }
 
   /* kolonsport */
-  .kolonsport{padding:100px 0;}
   .kolonsport ul{padding:0 54px;}
   .kolonsport ul li .txt_box{height:290px;}
   .kolonsport p,

@@ -124,9 +124,9 @@ section h2{
 
 }
 .portfolio ul li:first-child{background-image:url("../images/portfolio_bn_ks.jpg");}
-.portfolio ul li:nth-child(2){background-image:url("../images/portfolio_bn_1920_jisan_micro.jpg");}
-.portfolio ul li:nth-child(3){background-image:url("../images/portfolio_bn_1920_jisanresort.jpg");}
-.portfolio ul li:nth-child(4){background-image:url("../images/portfolio_bn_seoul365.jpg");}
+.portfolio ul li:nth-child(2){background-image:url("../images/portfolio_bn_seoul365.jpg");}
+.portfolio ul li:nth-child(3){background-image:url("../images/portfolio_bn_1920_jisan_micro.jpg");}
+.portfolio ul li:nth-child(4){background-image:url("../images/portfolio_bn_1920_jisanresort.jpg");}
 .portfolio ul li:nth-child(5){background-image:url("../images/portfolio_bn_wisdom.jpg");}
 .portfolio ul li:nth-child(6){background-image:url("../images/portfolio_bn_slow_rabbit.jpg");}
 .portfolio ul li:nth-child(7){background-image:url("../images/portfolio_bn_luscent.jpg");}

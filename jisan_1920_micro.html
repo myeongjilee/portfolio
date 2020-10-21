@@ -30,5 +30,18 @@
       </div>
     </section>
     <footer>Copyright &copy; codeli</footer>
+    <scrtip>
+      var filter = "win16|win32|win64|mac|macintel";
+
+      if ( navigator.platform ) {
+        if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) {
+           //mobile
+           $(.btn_link).attr("href","https://www.jisanresort.co.kr/mobile/event/1920/")
+        } else {
+          //pc
+          $(.btn_link).attr("href","https://www.jisanresort.co.kr/event/1920/")
+        }
+     }
+    </scrtip>
   </body>
 </html>

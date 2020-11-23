@@ -89,7 +89,7 @@
 		});
 
 		// 참여하기 버튼을 누르면 레이어 팝업이 위/아래에서 닫히며 뜨는 효과
-		$(".event button").click(function(){
+		$(".btn_join").click(function(){
 			$('.popup').fadeIn();
 			TweenMax.to($(".popup .top"), 0.5, {opacity:1,y:0,ease:Bounce.easeInOut,delay:0});
 			TweenMax.to($(".popup .bottom"), 0.5, {opacity:1,y:0,ease:Bounce.easeInOut,delay:0});

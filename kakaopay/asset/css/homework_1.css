@@ -6,6 +6,7 @@
 	padding-bottom:27.46666666666667vw;
 	background:url("../images/bg.jpg") center no-repeat;
 	background-size:cover;
+   -webkit-overflow-scrolling: touch;
 }
 .event:before{
 	display:block;

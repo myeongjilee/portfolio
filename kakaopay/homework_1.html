@@ -99,9 +99,9 @@
 
 		$(".btn_close").click(function(){
 			$('.popup').fadeOut();
-			TweenMax.to($(".popup .top"), 0.5, {opacity:1,y:-200,ease:Bounce.easeInOut,delay:0});
-			TweenMax.to($(".popup .bottom"), 0.5, {opacity:1,y:200,ease:Bounce.easeInOut,delay:0});
-			TweenMax.to($(".popup .btn_send"), 0.5, {y:100,ease:Bounce.easeInOut,delay:0.5});
+			TweenMax.to($(".popup .top"), 0.5, {opacity:1,y:-200,ease:Bounce.easeInOut,delay:1});
+			TweenMax.to($(".popup .bottom"), 0.5, {opacity:1,y:200,ease:Bounce.easeInOut,delay:1});
+			TweenMax.to($(".popup .btn_send"), 0.5, {y:100,ease:Bounce.easeInOut,delay:1});
 			$('body').css({'overflow-y': 'visible', 'box-sizing': 'content-box'});
 		});
 

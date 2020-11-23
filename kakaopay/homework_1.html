@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimal-ui">
+  <title>homework_1</title>
+  <link rel="stylesheet" href="./asset/css/reset.css" />
+  <link rel="stylesheet" href="./asset/css/homework_1.css" />
+  <script type="text/javascript" src="./asset/js/jquery-3.4.1.js"></script>
+  <script type="text/javascript" src="./asset/js/skrollr.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+ </head>
+ <body>
+	<section class="event">
+		<h1><img src="./asset/images/header.png" alt="kakaopay 송금 10주간의 현금스웩" /></h1>
+		<h2>
+			<span class="spark"></span>
+			<span class="line line01">DROP THE</span>
+			<span class="line line01_on"></span>
+			<span class="line line02">MONEY</span>
+			<span class="line line02_off"></span>
+			<span class="line line02_on"></span>
+			<img src="./asset/images/tit.png" alt="송금만해도 현금이 쏟아진다!" />
+		</h2>
+		<div class="coin coin01" data-0="top:15.50288276745676%;" data-250-start="top:7.751441383728379%;"></div>
+		<div class="coin coin02" data-0="top:30.55733504163997%;" data-250-start="top:15.24663677130045%;"></div>
+		<div class="coin coin03" data-0="top:39.33376040999359%;" data-250-start="top:19.6668802049968%;"></div>
+		<div class="coin coin04" data-0="top:22.16527866752082%;" data-250-start="top:11.08263933376041%;"></div>
+		<div class="coin coin05" data-0="top:28.12299807815503%;" data-250-start="top:14.02946828955798%;"></div>
+		<div class="coin coin06" data-0="top:40.87123638693145%;" data-250-start="top:20.43561819346573%;"></div>
+		<img src="./asset/images/G_money.png" class="money" alt="제이지 지폐 이미지" />
+		<img src="./asset/images/hand_left.png" class="img hand_left" alt="" />
+		<img src="./asset/images/million.png" class="img million" alt="총 1억원" />
+		<img src="./asset/images/hand_right.png" class="img hand_right" alt="" />
+		<p class="reward"><img src="./asset/images/reward.png" alt="1주차 6.30 ~ 7.6 추첨을 통해 카카오머니를 드립니다. | 백만원 1명, 1만원 100명, 1천원 1천명, 붸액원 15만명" /></p>
+		<div class="share">
+			<img src="./asset/images/share_box.png" alt="친구들도 우리와 함께 갑시다." />
+			<ul>
+				<li><a href="javascript:void(0);">카카오톡으로 공유하기</a></li>
+				<li><a href="javascript:void(0);">카카오스토리로 공유하기</a></li>
+				<li><a href="javascript:void(0);">페이스북으로 공유하기</a></li>
+				<li><a href="javascript:void(0);">트위터로 공유하기</a></li>
+			</ul>
+		</div>
+		<button class="btn_join"><img src="./asset/images/button.png" alt="참여하기" /></button>
+	</section>
+	<!-- 레이어 팝업 -->
+	<div class="popup">
+		<div>
+			<div class="top">
+				<a href="javascript:void(0);" class="btn_close">팝업 닫기</a>
+				<img src="./asset/images/popup_top.png" alt="" />
+			</div>
+			<div class="bottom">
+				<img src="./asset/images/popup_bottom.png" alt="" />
+				<button class="btn_send"><img src="./asset/images/popup_button.png" alt="송금하기" /></button>
+			</div>
+		</div>
+	</div>
+	<!-- // 레이어 팝업 -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			// 페이지 첫 진입 시 동전 떨어지는 효과
+			TweenMax.to($(".coin"), 0.5, {opacity:1,y:0,delay:0.5});
+			// 타이틀의 네온 사인 효과
+			TweenMax.to($(".event h2 .spark"), 0.5, {opacity:1,x:0,delay:1});
+			TweenMax.to($(".event h2 .line01_on"), 0.5, {opacity:1,x:0,delay:1});
+			TweenMax.to($(".event h2 .line02"), 0.5, {opacity:0,delay:1.2,repeat:2,onComplete:function(){
+				TweenMax.to($(".event h2 .line02"), 0.5, {opacity:1,delay:0.5});
+			}});
+			TweenMax.to($(".event h2 .line01_on"), 0.5, {opacity:0,x:0,delay:3,onComplete:function(){
+				TweenMax.to($(".event h2 .line01_on"), 0.5, {opacity:1,delay:0.5});
+			}});
+			TweenMax.to($(".event h2 .line02"), 0.5, {opacity:0,delay:4.5,repeat:1,onComplete:function(){
+				TweenMax.to($(".event h2 .line02_on"), 0.5, {opacity:1,delay:0.5});
+			}});
+		});
+
+		// 페이지 스크롤 시, 동전 이미지의 시차(parallax) 이동 효과
+		var s = skrollr.init({
+			forceHeight: false,
+			smoothScrollingDuration: 500,
+			mobileCheck: function(){
+				if((/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+					// mobile device
+				}
+			}
+		});
+
+		// 참여하기 버튼을 누르면 레이어 팝업이 위/아래에서 닫히며 뜨는 효과
+		$(".event button").click(function(){
+			$('.popup').fadeIn();
+			TweenMax.to($(".popup .top"), 0.5, {opacity:1,y:0,ease:Bounce.easeInOut,delay:0});
+			TweenMax.to($(".popup .bottom"), 0.5, {opacity:1,y:0,ease:Bounce.easeInOut,delay:0});
+			TweenMax.to($(".popup .btn_send"), 0.5, {y:0,ease:Bounce.easeInOut,delay:0.5});
+			$('body').css({'overflow-y': 'hidden', 'box-sizing': 'border-box'});
+		});
+
+		$(".btn_close").click(function(){
+			$('.popup').fadeOut();
+			TweenMax.to($(".popup .top"), 0.5, {opacity:1,y:-200,ease:Bounce.easeInOut,delay:0});
+			TweenMax.to($(".popup .bottom"), 0.5, {opacity:1,y:200,ease:Bounce.easeInOut,delay:0});
+			TweenMax.to($(".popup .btn_send"), 0.5, {y:100,ease:Bounce.easeInOut,delay:0.5});
+			$('body').css({'overflow-y': 'visible', 'box-sizing': 'content-box'});
+		});
+
+		// 페이지 스크롤 시, 공유하기의 네온 사인 효과
+		$(window).scroll(function(){
+			var winTop = $(this).scrollTop();
+			var share = $(".share").offset().top - 600;
+
+			if(share < winTop){
+				$(".share").addClass("blink");
+			}else{
+				$(".share").removeClass("blink");
+			}
+		});
+	</script>
+ </body>
+</html>

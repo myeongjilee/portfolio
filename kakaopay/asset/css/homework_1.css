@@ -1,0 +1,418 @@
+@CHARSET "UTF-8";
+
+.event{
+	position:relative;
+	width:100%;
+	padding-bottom:27.46666666666667vw;
+	background:url("../images/bg.jpg") center no-repeat;
+	background-size:cover;
+}
+.event:before{
+	display:block;
+	position:absolute;
+	left:0;
+	bottom:0;
+	width:100%;
+	height:21.6vw;
+	background-image:url("../images/footer_coin.png");
+	background-size:contain;
+	background-repeat:no-repeat;
+	content:'';
+}
+/* header */
+.event h1{
+	position:relative;
+}
+.event h1:after{
+	display:block;
+	position:absolute;
+	top:0;
+	right:0;
+	width:30vw;
+	height:20.13333333333333vw;
+	background-image:url("../images/header_label.png");
+	background-size:contain;
+	background-repeat:no-repeat;
+	content:'';
+}
+
+/* coin */
+.coin{
+	position:absolute;
+	background-size:cover;
+	background-repeat:no-repeat;
+	transform:matrix(1, 0, 0, 1, 0, -500);
+	opacity:0;
+	z-index:20;
+}
+.coin01{
+	left:0;
+	width:12.8vw;
+	height:33.73333333333333vw;
+	background-image:url("../images/coin_left01.png");
+}
+.coin02{
+	left:17.33333333333333vw;
+	width:10.4vw;
+	height:14.13333333333333vw;
+	background-image:url("../images/coin_left02.png");
+}
+.coin03{
+	left:0;
+	width:5.866666666666667vw;
+	height:14.93333333333333vw;
+	background-image:url("../images/coin_left03.png");
+}
+.coin04{
+	right:0;
+	width:16.53333333333333vw;
+	height:22vw;
+	background-image:url("../images/coin_right01.png");
+}
+.coin05{
+	right:9.6vw;
+	width:8.666666666666667vw;
+	height:13.86666666666667vw;
+	background-image:url("../images/coin_right02.png");
+	z-index:10;
+}
+.coin06{
+	right:0;
+	width:15.2vw;
+	height:24.93333333333333vw;
+	background-image:url("../images/coin_right03.png");
+}
+
+/* title */
+.event h2{
+	position:relative;
+	margin-top:8vw;
+}
+.event h2 .spark{
+	display:block;
+	position:absolute;
+	top:-12.53333333333333vw;
+	left:15.73333333333333vw;
+	width:21.33333333333333vw;
+	height:21.6vw;
+	background:url("../images/tit_spark.png") 0 0 no-repeat;
+	background-size:cover;
+	transform:matrix(1, 0, 0, 1, 0, 0);
+	opacity:0;
+	content:'';
+}
+.event h2 .line{
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-size:cover;
+	background-repeat:no-repeat;
+	text-indent:-9999px;
+	transform:matrix(1, 0, 0, 1, 0, 0);
+}
+.event h2 .line01{
+	background-image:url("../images/tit_line01.png");
+}
+.event h2 .line01_on{
+	background-image:url("../images/tit_line01_on.png");
+}
+.event h2 .line02{
+	background-image:url("../images/tit_line02.png");
+}
+.event h2 .line02_off{
+	background-image:url("../images/tit_line02_off.png");
+}
+.event h2 .line02_on{
+	background-image:url("../images/tit_line02_on.png");
+	opacity:0;
+}
+/* money */
+.event .money{
+	width:81.06666666666667%;
+	margin-top:-5.466666666666667vw;
+	margin-left:11.06666666666667vw;
+	animation:floating 1.5s linear infinite;
+}
+.event .img{
+	position:absolute;
+}
+.event .hand_left{
+	top:99.6vw;
+	left:20.13333333333333%;
+	width:13.2%;
+	animation:hand .8s linear infinite;
+}
+.event .million{
+	top:95.6vw;
+	left:33.46666666666667%;
+	width:31.46666666666667%;
+	animation:pulse .8s linear infinite;
+}
+.event .hand_right{
+	top:95.2vw;
+	left:66.93333333333333%;
+	width:13.86666666666667%;
+	animation:hand2 .8s linear infinite;
+}
+/* reward */
+.event .reward{
+	margin:6.8vw 0 7.733333333333333vw
+}
+/* share */
+.event .share{
+	position:relative;
+}
+.event .share.blink>img{
+	animation: blink .6s step-start 2;
+}
+.event .share ul{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	padding-top:12vw;
+	background-image:url("../images/share_icon.png");
+	background-size:contain;
+	background-repeat:no-repeat;
+	text-align:center;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+.event .share ul li{
+	display:inline-block;
+	width:7.6vw;
+	height:6.4vw;
+	margin:0 5.466666666666667vw;
+}
+.event .share ul li a{
+	display:block;
+	width:100%;
+	height:100%;
+	text-indent:-9999px;
+}
+/* 참여하기 버튼 */
+.event .btn_join{
+	display:block;
+	position:fixed;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:40;
+}
+
+/* animation */
+@keyframes floating {
+    from{
+		transform: translate(0,  0px);
+	}
+    65%{
+		transform: translate(0, 2vw);
+	}
+    to{
+		transform: translate(0, -0px);
+	}
+}
+@keyframes pulse {
+	from {
+		transform: scale3d(1, 1, 1);
+	}
+	50% {
+		transform: scale3d(1.05, 1.05, 1.05);
+	}
+	to {
+		transform: scale3d(1, 1, 1);
+	}
+}
+@keyframes hand {
+	from {
+		transform: rotate3d(0, 0, 1, 3deg);
+	}
+	50%{
+		transform: rotate3d(0, 0, 1, -3deg);
+	}
+	to {
+		transform: rotate3d(0, 0, 1, 3deg);
+	}
+}
+@keyframes hand2 {
+	from {
+		transform: rotate3d(0, 0, 1, -3deg);
+	}
+	50%{
+		transform: rotate3d(0, 0, 1, 3deg);
+	}
+	to {
+		transform: rotate3d(0, 0, 1, -3deg);
+	}
+}
+@keyframes blink {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* popup */
+.popup{
+	display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+	z-index:50;
+}
+.popup>div>div{
+	position:relative;
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+.popup .top{
+	background-image:url("../images/popup_top_bg.jpg");
+	background-position:bottom center;
+	transform:matrix(1, 0, 0, 1, 0, -200);
+	opacity:0;
+}
+.popup .btn_close{
+	position:absolute;
+	top:6vw;
+	right:6.4vw;
+	width:7.6vw;
+	height:7.6vw;
+	text-indent:-9999px;
+}
+.popup .bottom{
+	background-image:url("../images/popup_bottom_bg.jpg");
+	background-position:top center;
+	transform:matrix(1, 0, 0, 1, 0, 200);
+	opacity:0;
+}
+.popup .btn_send{
+	display:block;
+	position:fixed;
+	left:0;
+	bottom:0;
+	width:100%;
+	transform:matrix(1, 0, 0, 1, 0, 100);
+	z-index:40;
+}
+
+@media (min-width: 750px){
+	.event{
+		width:750px;
+		margin:0 auto;
+		padding-bottom:206px;
+	}
+	.event:before{
+		height:162px;
+	}
+	/* header */
+	.event h1:after{
+		width:225px;
+		height:151px;
+	}
+
+	/* coin */
+	.coin01{
+		width:96px;
+		height:253px;
+	}
+	.coin02{
+		left:130px;
+		width:78px;
+		height:106px;
+	}
+	.coin03{
+		width:44px;
+		height:112px;
+	}
+	.coin04{
+		width:124px;
+		height:165px;
+	}
+	.coin05{
+		right:72px;
+		width:65px;
+		height:104px;
+	}
+	.coin06{
+		width:114px;
+		height:187px;
+	}
+
+	/* title */
+	.event h2{
+		margin-top:60px;
+	}
+	.event h2 .spark{
+		top:-94px;
+		left:118px;
+		width:160px;
+		height:162px;
+	}
+	/* money */
+	.event .money{
+		margin-top:-41px;
+		margin-left:83px;
+	}
+	.event .hand_left{
+		top:747px;
+	}
+	.event .million{
+		top:717px;
+	}
+	.event .hand_right{
+		top:714px;
+	}
+	/* reward */
+	.event .reward{
+		margin:51px 0 58px
+	}
+	/* share */
+	.event .share ul{
+		padding-top:90px;
+	}
+	.event .share ul li{
+		width:57px;
+		height:48px;
+		margin:0 41px;
+	}
+	/* 참여하기 버튼 */
+	.event .btn_join{
+		left:50%;
+		width:750px;
+		margin-left:-375px;
+	}
+
+	/* animation */
+	@keyframes floating {
+		from{
+			transform: translate(0,  0px);
+		}
+		65%{
+			transform: translate(0, 15px);
+		}
+		to{
+			transform: translate(0, -0px);
+		}
+	}
+
+	/* popup */
+	.popup{
+		left:50%;
+		width:750px;
+		margin-left:-375px;
+	}
+	.popup .btn_close{
+		top:45px;
+		right:48px;
+		width:57px;
+		height:57px;
+	}
+}

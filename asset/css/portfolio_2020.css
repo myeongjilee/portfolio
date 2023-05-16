@@ -308,7 +308,7 @@ section h2 {
 @media screen and (min-width: 768px) {
   /* header */
   header {
-    height: 80px;
+    /* height: 80px; */
   }
   header h1 {
     top: 30px;
@@ -478,7 +478,7 @@ section h2 {
 @media screen and (min-width: 1280px) {
   /* header */
   header {
-    height: 100px;
+    /* height: 100px; */
   }
   header h1 {
     top: 38px;
